@@ -123,13 +123,6 @@ export const query = graphql`
         }
       }
     }
-    flagIt: file(name: { eq: "code" }) {
-      childImageSharp {
-        fixed(width: 250) {
-          ...GatsbyImageSharpFixed_tracedSVG
-        }
-      }
-    }
     skillIcons: allFile(filter: { dir: { regex: "/about/skills$/" } }) {
       edges {
         node {
@@ -142,18 +135,8 @@ export const query = graphql`
         }
       }
     }
-    toolIcons: allFile(filter: { dir: { regex: "/about/tools$/" } }) {
-      edges {
-        node {
-          name
-          childImageSharp {
-            fixed(width: 50) {
-              ...GatsbyImageSharpFixed_tracedSVG
-            }
-          }
-        }
-      }
-    }
+
+    
   }
 `
 // Use to set specific icons names
