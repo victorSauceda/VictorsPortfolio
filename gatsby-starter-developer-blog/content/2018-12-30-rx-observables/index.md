@@ -1,6 +1,6 @@
 ---
 title: Serverless Server With AWS
-tags: [typescript, javascript, rxjs]
+tags: []
 date: 2018-12-30T05:25:44.226Z
 path: blog/top-7-rxjs-patterns
 cover: ./2.png

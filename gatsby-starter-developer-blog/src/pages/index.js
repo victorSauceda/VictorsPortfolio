@@ -6,14 +6,14 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import PostList from '../components/post-list'
-import ArchivePagination from '../components/archive-pagination'
+// import ArchivePagination from '../components/archive-pagination'
 import Config from '../../config'
 
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" description={Config.siteDescription} path="" />
     <PostList posts={data.allMarkdownRemark.edges} />
-    <ArchivePagination nextPage={2} />
+    {/* <ArchivePagination nextPage={2} /> */}
   </Layout>
 )
 

@@ -35,7 +35,7 @@ class About extends React.Component {
   static propTypes = aboutPropTypes
 
   render() {
-    let { profilePhoto, flagIt, skillIcons, toolIcons } = this.props.data
+    let { profilePhoto, codingForFun, flagIt, skillIcons, toolIcons } = this.props.data
     return (
       <Layout>
         <SEO
@@ -49,22 +49,19 @@ class About extends React.Component {
           </div>
           <div className={style.content}>
             <h1>Hi, I'm Victor</h1>
-            <h2>Junior Web Developer</h2>
+            <h2>Junior FullStack Developer</h2>
             <p></p>
-            <a href={Utils.resolvePageUrl('../', 'it', 'about')}>
-              <Img
-                fixed={flagIt.childImageSharp.fixed}
-                style={{ display: 'block', margin: 'auto' }}
-              />
-            </a>
+            <div className={style.photo}>
+              <Img fluid={codingForFun.childImageSharp.fluid} />
+            </div>
             <p>
               An up-and-coming FullStack Web Developer in the Greater Seattle Area.Passionate about implementing innovative website that will influence change in communities. Specializing in Web and Mobile Websites that offer users the experience necessary that will promote overall growth. With over 3 years of experience and a worth mentioning personality, I will be a great addition to any team. If you are interested or would like to know more, please contact me.
             </p>
             <br />
             <h2>Skills</h2>
             <ImageList edges={skillIcons.edges} />
-            <h2>Tools</h2>
-            <ImageList edges={toolIcons.edges} />
+
+
           </div>
         </div>
       </Layout>
@@ -113,6 +110,13 @@ class ImageList extends React.Component {
 export const query = graphql`
   {
     profilePhoto: file(name: { eq: "picofMe" }) {
+      childImageSharp {
+        fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+    codingForFun: file(name: { eq: "code" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid_tracedSVG
