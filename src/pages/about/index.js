@@ -35,7 +35,13 @@ class About extends React.Component {
   static propTypes = aboutPropTypes
 
   render() {
-    let { profilePhoto, codingForFun, flagIt, skillIcons, toolIcons } = this.props.data
+    let {
+      profilePhoto,
+      codingForFun,
+      flagIt,
+      skillIcons,
+      toolIcons,
+    } = this.props.data
     return (
       <Layout>
         <SEO
@@ -49,19 +55,70 @@ class About extends React.Component {
           </div>
           <div className={style.content}>
             <h1>Hi, I'm Victor</h1>
-            <h2>Junior FullStack Developer</h2>
+            <h2>Software Engineer</h2>
             <p></p>
-            <div className={style.photo}>
+            <div style={{ margin: 'auto' }} className={style.photo}>
               <Img fluid={codingForFun.childImageSharp.fluid} />
             </div>
             <p>
-              An up-and-coming FullStack Web Developer in the Greater Seattle Area.Passionate about implementing innovative website that will influence change in communities. Specializing in Web and Mobile Websites that offer users the experience necessary that will promote overall growth. With over 3 years of experience and a worth mentioning personality, I will be a great addition to any team. If you are interested or would like to know more, please contact me.
+              I am a software engineer at Code for America. I am developing a
+              web application for a justice-impacted population. Leveraging
+              technology to make resources more accessible for everyone in the
+              community. We are using Typescript, React, Nodejs, Postgres,
+              Aptiblle, Twilio, and Mapbox in our current iteration of the
+              application. I have also gained experience in user testing,
+              project management, user research, marketing, event hosting, video
+              editing and more. <br />
+              <br /> I also have experience in AWS, MongoDB, Airtable,
+              Smartsheets, MaterialUI, Azure, Python. <br />
+              <br />I am passionate about technology. I am always finding ways
+              to sharpen my skill set and understand all that is out there. I am
+              involved with a male leadership fitness organization called
+              <b style={{ textDecoration: 'underline' }}>
+                {' '}
+                <a
+                  href="https://calendly.com/victorasauceda/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ fontWeight: '1rem' }}
+                >
+                  F3
+                </a>
+              </b>
+              . I enjoy finding ways to give back to my community through
+              technology, justice reform advocacy, fitness, education, and much
+              more. I volunteer as a facilitator every Saturday for Defy
+              Ventures a program that assists individuals in their
+              entrepreneurial journey. I am sure that I can leverage my skillet
+              to benefit the advancement of your company. Feel free to reach out
+              to me at
+              <b style={{ textDecoration: 'underline' }}>
+                {' '}
+                <a
+                  href="https://calendly.com/victorasauceda/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ fontWeight: '1rem' }}
+                >
+                  victorasauceda@gmail.com
+                </a>
+              </b>{' '}
+              at any time or schedule an appointment on my{' '}
+              <b style={{ textDecoration: 'underline' }}>
+                {' '}
+                <a
+                  href="https://calendly.com/victorasauceda/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ fontWeight: '1rem' }}
+                >
+                  calendar
+                </a>
+              </b>
             </p>
             <br />
             <h2>Skills</h2>
             <ImageList edges={skillIcons.edges} />
-
-
           </div>
         </div>
       </Layout>
@@ -92,7 +149,11 @@ class ImageList extends React.Component {
           edgeA.node.name.toLowerCase() > edgeB.node.name.toLowerCase() ? 1 : -1
         )
         .map(({ node: { name, childImageSharp } }) => (
-          <div className={style.iconWrapper} key={name}>
+          <div
+            style={{ width: '10rem', height: '3rem', padding: '1rem' }}
+            className={style.iconWrapper}
+            key={name}
+          >
             <Img
               fixed={childImageSharp.fixed}
               alt={name + ' logo'}
@@ -135,12 +196,11 @@ export const query = graphql`
         }
       }
     }
-
-    
   }
 `
 // Use to set specific icons names
 export const iconsNameMap = {
+  aws: 'AWS',
   css: 'CSS',
   html: 'HTML',
   jquery: 'JQuery',
