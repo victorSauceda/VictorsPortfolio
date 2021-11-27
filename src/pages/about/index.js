@@ -61,19 +61,19 @@ class About extends React.Component {
               <Img fluid={codingForFun.childImageSharp.fluid} />
             </div>
             <p>
-              I am a software engineer at Code for America, developing a web
-              application for the justice-impacted population in Santa Barbara
-              County. Leveraging technology to make resources more accessible
-              for everyone in the community. We are using Typescript, React,
-              Nodejs, Postgres, Aptible, Twilio, and Mapbox in our current
-              iteration of the application. I have gained experience in user
-              testing, project management, user research, marketing, event
-              hosting, video editing and more. <br />
-              <br /> I have experience in AWS, MongoDB, Airtable, Smartsheet,
-              MaterialUI, Azure, Python. <br />
+              I am a software engineer at Code for America. I am developing a
+              web application for a justice-impacted population. Leveraging
+              technology to make resources more accessible for everyone in the
+              community. We are using Typescript, React, Nodejs, Postgres,
+              Aptiblle, Twilio, and Mapbox in our current iteration of the
+              application. I have also gained experience in user testing,
+              project management, user research, marketing, event hosting, video
+              editing and more. <br />
+              <br /> I also have experience in AWS, MongoDB, Airtable,
+              Smartsheets, MaterialUI, Azure, Python. <br />
               <br />I am passionate about technology. I am always finding ways
               to sharpen my skill set and understand all that is out there. I am
-              involved with a male leadership fitness organization called{' '}
+              involved with a male leadership fitness organization called
               <b style={{ textDecoration: 'underline' }}>
                 {' '}
                 <a
