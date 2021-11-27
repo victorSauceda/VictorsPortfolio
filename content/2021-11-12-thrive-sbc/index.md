@@ -1,6 +1,6 @@
 ---
 title: Thrive SBC
-tags: ['React', 'Stripe', 'NodeJS', 'MaterialUI']
+tags: ['react', 'stripe', 'nodejs', 'materialui']
 date: 2021-11-12T05:25:44.226Z
 path: blog/thrivesbc
 cover: ./2.png

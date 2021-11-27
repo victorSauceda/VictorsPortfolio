@@ -1,6 +1,6 @@
 ---
 title: Kopolo
-tags: ['React', 'Stripe', 'NodeJS', 'MaterialUI']
+tags: ['react', 'stripe', 'nodejs', 'materialui']
 date: 2018-12-30T05:25:44.226Z
 path: blog/kopolo
 cover: ./2.png

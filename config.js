@@ -46,6 +46,14 @@ module.exports = {
       description:
         'RxJS is a library for reactive programming using Observables, to make it easier to compose asynchronous or callback-based code.',
     },
+    stripe: {
+      name: 'Stripe',
+      description: 'Accepts payments',
+    },
+    materialui: {
+      name: 'Material UI',
+      description: 'Styles websites',
+    },
     sass: {
       description: 'Sass is a stable extension to classic CSS.',
     },
