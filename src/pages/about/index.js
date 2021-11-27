@@ -170,7 +170,7 @@ class ImageList extends React.Component {
 
 export const query = graphql`
   {
-    profilePhoto: file(name: { eq: "picofMe" }) {
+    profilePhoto: file(name: { eq: "victor" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid_tracedSVG

@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: '/gatsby-starter-developer-blog',
   siteUrl: 'https://github.com/victorSauceda/',
   siteTitle: 'Victor Sauceda',
-  siteDescription: 'Software Engineer/Community Activist',
+  siteDescription: 'Software Engineer',
   author: 'Victor Sauceda',
   postsForArchivePage: 3,
   defaultLanguage: 'en',
@@ -15,8 +15,9 @@ module.exports = {
     archive: 'archive',
   },
   social: {
-    github: 'https://github.com/victorSauceda',
     linkedin: 'https://linkedin.com/in/victor-sauceda-10202a190',
+    calendly: 'https://calendly.com/victorasauceda/',
+    github: 'https://github.com/victorSauceda',
     rss: '/rss.xml',
   },
   tags: {
