@@ -1,6 +1,6 @@
 ---
 title: New Freedom
-tags: ['React', 'Stripe', 'NodeJS', 'MaterialUI']
+tags: ['react', 'stripe', 'nodejs', 'materialui']
 date: 2020-09-12T05:25:44.226Z
 path: blog/newfreedom
 cover: ./2.png
