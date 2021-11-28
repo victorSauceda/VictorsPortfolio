@@ -44,13 +44,25 @@ exports.createPages = ({ actions, graphql }) => {
         },
       })
     })
-
     const regexForIndex = /index\.md$/
     // Posts in default language, excluded the translated versions
     const defaultPosts = allMarkdownRemark.edges.filter(
       ({ node: { fileAbsolutePath } }) => fileAbsolutePath.match(regexForIndex)
     )
-
+    exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+      if (stage === 'build-html' || stage === 'develop-html') {
+        actions.setWebpackConfig({
+          module: {
+            rules: [
+              {
+                test: /react-pdf/, // check /pdfjs-dist/ too
+                use: loaders.null(),
+              },
+            ],
+          },
+        })
+      }
+    }
     /* Archive pages */
     const postsForPage = config.postsForArchivePage
     const archivePages = Math.ceil(defaultPosts.length / postsForPage)
