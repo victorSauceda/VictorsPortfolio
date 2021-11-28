@@ -1,6 +1,6 @@
 ---
 title: F3 Pugetsound
-tags: []
+tags: ['wordpress', 'python', 'sql']
 date: 2021-04-12T05:25:44.226Z
 path: blog/pugetsound
 cover: ./2.png

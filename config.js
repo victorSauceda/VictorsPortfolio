@@ -11,7 +11,7 @@ module.exports = {
     home: '/',
     blog: 'blog',
     about: 'about',
-    tag: 'tag',
+    learnmore: 'learnmore',
     archive: 'archive',
   },
   social: {
@@ -36,10 +36,26 @@ module.exports = {
       description:
         'Laravel is a PHP framework for building web applications following the MVC pattern.',
     },
+    materialui: {
+      name: 'Material UI',
+      description: 'Used for styling React components',
+    },
     nodejs: {
       name: 'Node.js',
       description:
         'Node.js is a tool for executing JavaScript in a variety of environments.',
+    },
+    postgres: {
+      name: 'PostGres',
+      description: 'Utilized as db for application',
+    },
+    sendgrid: {
+      name: 'SendGrid',
+      description: 'Used to automate and authenticate emails',
+    },
+    smartsheet: {
+      name: 'SmartSheet',
+      description: 'Used as a database with API calls',
     },
     rxjs: {
       name: 'RxJS',
@@ -48,6 +64,30 @@ module.exports = {
     },
     sass: {
       description: 'Sass is a stable extension to classic CSS.',
+    },
+    netlify: {
+      name: 'Netlify',
+      description: 'Used for web hosting',
+    },
+    gatsby: {
+      name: 'Gatsby',
+      description: 'Single web page that uses graphql',
+    },
+    sql: {
+      name: 'SQL',
+      description: 'Query Language',
+    },
+    stripe: {
+      name: 'Stripe',
+      description: 'Accepts payments',
+    },
+    python: {
+      name: 'Python',
+      description: 'Programming Language',
+    },
+    wordpress: {
+      name: 'WordPress',
+      description: 'User Friendly web application platform',
     },
     typescript: {
       description:

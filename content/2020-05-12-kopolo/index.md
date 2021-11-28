@@ -1,6 +1,6 @@
 ---
 title: Kopolo
-tags: []
+tags: ['react', 'stripe', 'nodejs', 'materialui']
 date: 2018-12-30T05:25:44.226Z
 path: blog/kopolo
 cover: ./2.png
@@ -11,7 +11,7 @@ Started Kopolo: April 2020
 </br>
 End Date: April 2021
 </br>
-Technologies: React, Express, Stripe, Aptible, NodeJS, MaterialUI
+Technologies: React, Express, Stripe, NodeJS, MaterialUI
 
 </br>
 </br>
