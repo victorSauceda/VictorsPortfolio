@@ -12,6 +12,7 @@ module.exports = {
     blog: 'blog',
     about: 'about',
     learnmore: 'learnmore',
+    resume: 'resume',
     archive: 'archive',
   },
   social: {

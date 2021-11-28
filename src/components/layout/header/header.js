@@ -1,5 +1,5 @@
 /* Vendor imports */
-import React, { Component } from 'react'
+import React, { Component, useState } from 'react'
 import { Link } from 'gatsby'
 import {
   FaBars,
@@ -12,7 +12,7 @@ import {
 import style from './header.module.less'
 import Config from '../../../../config'
 import Utils from '../../../utils'
-
+import { Document, Page } from 'react-pdf'
 class Header extends Component {
   constructor() {
     super()
@@ -20,6 +20,8 @@ class Header extends Component {
       lastScrollY: 0,
       fixedHeader: false,
       collapsedMenu: true,
+      numPages: null,
+      pageNumber: 1,
     }
     this.toggleFixedHeader = this.toggleFixedHeader.bind(this)
     this.toggleMenu = this.toggleMenu.bind(this)
@@ -32,7 +34,9 @@ class Header extends Component {
   componentWillUnmount() {
     window.removeEventListener('scroll', this.toggleFixedHeader)
   }
-
+  onDocumentLoadSuccess({ numPages }) {
+    this.setState({ numPages: numPages })
+  }
   toggleFixedHeader() {
     if (!this.toggleFixedHeader.animationInProgress) {
       this.toggleFixedHeader.animationInProgress = true
@@ -101,6 +105,9 @@ class Header extends Component {
           </li>
           <li>
             <Link to={'/learnmore'}>Learn more</Link>
+          </li>
+          <li>
+            <Link to={'/resume'}>Resume</Link>
           </li>
         </ul>
         <ul>
