@@ -66,11 +66,11 @@ class About extends React.Component {
               technology to make resources more accessible for everyone in the
               community. We are using Typescript, React, Nodejs, Postgres,
               Aptiblle, Twilio, and Mapbox in our current iteration of the
-              application. I have also gained experience in user testing,
-              project management, user research, marketing, event hosting, video
-              editing and more. <br />
-              <br /> I also have experience in AWS, MongoDB, Airtable,
-              Smartsheets, MaterialUI, Azure, Python. <br />
+              application. I have gained experience in user testing, project
+              management, user research, marketing, event hosting, video editing
+              and more. <br />
+              <br /> I have experience in AWS, MongoDB, Airtable, Smartsheets,
+              MaterialUI, Azure, Python. <br />
               <br />I am passionate about technology. I am always finding ways
               to sharpen my skill set and understand all that is out there. I am
               involved with a male leadership fitness organization called
