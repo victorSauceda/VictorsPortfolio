@@ -1,29 +1,19 @@
 /* Vendor imports */
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
+
 /* App imports */
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
-import Utils from '../../utils'
-import style from './index.module.less'
-import { styled } from '@mui/material/styles'
+
 import Card from '@mui/material/Card'
 import Grid from '@mui/material/Grid'
 import CardHeader from '@mui/material/CardHeader'
 import CardMedia from '@mui/material/CardMedia'
 import CardContent from '@mui/material/CardContent'
-import CardActions from '@mui/material/CardActions'
-import Collapse from '@mui/material/Collapse'
 import Avatar from '@mui/material/Avatar'
-import IconButton from '@mui/material/IconButton'
 import Typography from '@mui/material/Typography'
-import { red } from '@mui/material/colors'
-import FavoriteIcon from '@mui/icons-material/Favorite'
-import ShareIcon from '@mui/icons-material/Share'
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
-import MoreVertIcon from '@mui/icons-material/MoreVert'
+
 import newfreedom from '../../../src/images/newfreedom.png'
 import youth from '../../../src/images/youth.png'
 import defytheodds from '../../../src/images/defytheodds.png'
@@ -35,6 +25,7 @@ import power from '../../../src/images/power.png'
 import cohort from '../../../src/images/cohort.png'
 import linkedin from '../../../src/images/linkedin.png'
 import resourcefair from '../../../src/images/resourcefair.png'
+import style from './index.module.less'
 export const articles = [
   {
     name: 'Release of ThriveSBC & resource fair at UCSB',
@@ -173,7 +164,15 @@ class Learnmore extends React.Component {
         <div>
           <div>
             <h1>Take a look at some of the other things I am involved in</h1>
-            <Grid container sx={{ justifyContent: 'center' }}>
+            <Grid
+              container
+              // className={style.cards}
+              sx={{
+                justifyContent: 'center',
+                // width: '60%',
+                margin: 'auto',
+              }}
+            >
               {articles.map(item => {
                 const { name, date, description, link, pic } = item
                 return (
@@ -185,11 +184,11 @@ class Learnmore extends React.Component {
                     }}
                   >
                     <Card
-                      style={{
-                        height: '35rem',
-                        textAlign: 'center',
-                        width: '25rem',
-                      }}
+                      className={style.cards}
+                      // style={{
+                      //   height: '35rem',
+                      //   textAlign: 'center',
+                      // }}
                     >
                       <CardHeader
                         avatar={
@@ -212,7 +211,11 @@ class Learnmore extends React.Component {
                         />
                       </a>
                       <CardContent style={{ textAlign: 'center' }}>
-                        <Typography variant="body2" color="text.secondary">
+                        <Typography
+                          variant="body2"
+                          color="text.secondary"
+                          style={{ padding: '1rem' }}
+                        >
                           {description}
                         </Typography>
                       </CardContent>

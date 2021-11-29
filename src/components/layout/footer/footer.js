@@ -5,8 +5,8 @@ import style from './footer.module.less'
 
 const Footer = () => (
   <div className={style.container}>
-    <p>
-      Thank you for viewing my portfolio if you have any questions please feel
+    <p style={{ textAlign: 'center' }}>
+      Thank you for viewing my portfolio. If you have any questions please feel
       free to contact me at anytime at
       <b style={{ textDecoration: 'underline' }}>
         {' '}
