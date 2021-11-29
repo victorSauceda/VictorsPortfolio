@@ -38,9 +38,8 @@ class About extends React.Component {
     let {
       profilePhoto,
       codingForFun,
-      flagIt,
+
       skillIcons,
-      toolIcons,
     } = this.props.data
     return (
       <Layout>

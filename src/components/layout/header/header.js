@@ -88,7 +88,7 @@ class Header extends Component {
           this.state.collapsedMenu ? style.collapsedMenu : style.expandedMenu,
         ].join(' ')}
       >
-        <ul>
+        <ul style={{ padding: '1rem', fontSize: '1rem', zIndex: '30' }}>
           <li>
             <Link to={Utils.resolvePageUrl(Config.pages.home)}>Home</Link>
           </li>
@@ -98,7 +98,7 @@ class Header extends Component {
           <li>
             <Link to={'/about'}>About</Link>
           </li>
-          <li>
+          <li style={{ whiteSpace: 'nowrap' }}>
             <Link to={'/learnmore'}>Learn more</Link>
           </li>
           <li>
