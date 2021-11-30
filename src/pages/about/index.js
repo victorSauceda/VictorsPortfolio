@@ -61,13 +61,13 @@ class About extends React.Component {
             </div>
             <p>
               I am a software engineer at Code for America. I am developing a
-              web application for a justice-impacted population. Leveraging
-              technology to make resources more accessible for everyone in the
-              community. We are using Typescript, React, Nodejs, Postgres,
-              Aptiblle, Twilio, and Mapbox in our current iteration of the
-              application. I have gained experience in user testing, project
-              management, user research, marketing, event hosting, video editing
-              and more. <br />
+              web application for a justice-impacted population of ~3500
+              individuals. I leverage technology to make resources more
+              accessible for everyone in the community. I am using Typescript,
+              React, Nodejs, Postgres, Aptiblle, Twilio, and Mapbox in the
+              current iteration of the application. I have gained experience in
+              user testing, project management, user research, marketing, event
+              hosting, video editing and more. <br />
               <br /> I have experience in AWS, MongoDB, Airtable, Smartsheets,
               MaterialUI, Azure, Python. <br />
               <br />I am passionate about technology. I am always finding ways
