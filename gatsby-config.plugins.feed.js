@@ -1,5 +1,5 @@
-const config = require('./config');
-const utils = require('./src/utils');
+const config = require('./config')
+const utils = require('./src/utils')
 
 module.exports = {
   resolve: `gatsby-plugin-feed`,
@@ -8,18 +8,16 @@ module.exports = {
       {
         serialize: ({ query: { allMarkdownRemark } }) => {
           return allMarkdownRemark.edges.map(({ node }) => {
-            const { siteUrl, pathPrefix, author } = config
+            const { siteUrl, author } = config
             const { title, date, path, excerpt } = node.frontmatter
             return Object.assign({}, node.frontmatter, {
               title: title,
               description: excerpt,
-              url: utils.resolveUrl(siteUrl, pathPrefix, path),
+              url: utils.resolveUrl(siteUrl, path),
               guid: siteUrl + path + title,
               date: date,
               author: author,
-              custom_elements: [
-                { "content:encoded": node.html }
-              ],
+              custom_elements: [{ 'content:encoded': node.html }],
             })
           })
         },
@@ -43,8 +41,8 @@ module.exports = {
             }
           }
         `,
-        output: "/rss.xml",
-        title: "Victor Sauceda",
+        output: '/rss.xml',
+        title: 'Victor Sauceda',
       },
     ],
   },

@@ -1,5 +1,8 @@
-const config = require('./config')
-const plugins = require('./gatsby-config.plugins')
+"use strict";
+
+var config = require('./config');
+
+var plugins = require('./gatsby-config.plugins');
 
 module.exports = {
   // pathPrefix: config.pathPrefix,
@@ -7,7 +10,7 @@ module.exports = {
     // Data used by some gatsby plugins
     siteUrl: config.siteUrl,
     title: config.siteTitle,
-    description: config.siteDescription,
+    description: config.siteDescription
   },
-  plugins,
-}
+  plugins: plugins
+};
