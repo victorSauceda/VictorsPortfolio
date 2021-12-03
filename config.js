@@ -1,6 +1,6 @@
 module.exports = {
-  pathPrefix: '/gatsby-starter-developer-blog',
-  siteUrl: 'https://github.com/victorSauceda/',
+  pathPrefix: 'projects',
+  siteUrl: 'http://www.fullstackvictor.com/',
   siteTitle: 'Victor Sauceda',
   siteDescription: 'Software Engineer',
   author: 'Victor Sauceda',
