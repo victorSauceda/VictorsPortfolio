@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: 'projects',
+  pathPrefix: '',
   siteUrl: 'https://www.fullstackvictor.com/',
   siteTitle: 'Victor Sauceda',
   siteDescription: 'Software Engineer',
