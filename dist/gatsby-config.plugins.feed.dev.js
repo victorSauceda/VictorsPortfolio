@@ -13,6 +13,7 @@ module.exports = {
         return allMarkdownRemark.edges.map(function (_ref2) {
           var node = _ref2.node;
           var siteUrl = config.siteUrl,
+              pathPrefix = config.pathPrefix,
               author = config.author;
           var _node$frontmatter = node.frontmatter,
               title = _node$frontmatter.title,
@@ -22,7 +23,7 @@ module.exports = {
           return Object.assign({}, node.frontmatter, {
             title: title,
             description: excerpt,
-            url: utils.resolveUrl(siteUrl, path),
+            url: utils.resolveUrl(siteUrl, pathPrefix, path),
             guid: siteUrl + path + title,
             date: date,
             author: author,

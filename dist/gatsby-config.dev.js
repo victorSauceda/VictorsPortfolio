@@ -5,7 +5,7 @@ var config = require('./config');
 var plugins = require('./gatsby-config.plugins');
 
 module.exports = {
-  // pathPrefix: config.pathPrefix,
+  pathPrefix: config.pathPrefix,
   siteMetadata: {
     // Data used by some gatsby plugins
     siteUrl: config.siteUrl,

@@ -75,7 +75,7 @@ function SEO({
                       hreflang: obj.hreflang,
                       href: Utils.resolvePageUrl(
                         Config.siteUrl,
-                        // Config.pathPrefix,
+                        Config.pathPrefix,
                         obj.path
                       ),
                     }))
