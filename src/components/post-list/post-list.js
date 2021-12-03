@@ -12,10 +12,11 @@ const PostList = ({ posts }) => (
   <div className={style.container}>
     {posts.map((post, index) => {
       const { title, date, path, tags, cover, excerpt } = post.node.frontmatter
+      console.log('🚀 ~ file: post-list.js ~ line 15 ~ {posts.map ~ path', path)
       return (
         <div key={title} className={style.post}>
           <div className={style.cover}>
-            <Link to={Utils.resolvePageUrl(path)}>
+            <Link to={`/${path}`}>
               <Img
                 fluid={cover.childImageSharp.fluid}
                 title={excerpt}
@@ -24,7 +25,7 @@ const PostList = ({ posts }) => (
             </Link>
           </div>
           <div className={style.content}>
-            <Link to={Utils.resolvePageUrl(path)}>
+            <Link to={`/${path}`}>
               {date ? <label>{date}</label> : null}
               <h2>{title}</h2>
               <p>{excerpt}</p>

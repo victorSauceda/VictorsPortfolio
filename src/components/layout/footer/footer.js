@@ -7,7 +7,7 @@ const Footer = () => (
   <div className={style.container}>
     <p style={{ textAlign: 'center' }}>
       Thank you for viewing my portfolio. If you have any questions please feel
-      free to contact me at anytime at
+      free to email me at
       <b style={{ textDecoration: 'underline' }}>
         {' '}
         <a
@@ -17,7 +17,7 @@ const Footer = () => (
           victorasauceda@gmail.com
         </a>
       </b>{' '}
-      at any time or schedule an appointment on my{' '}
+      or schedule an appointment on my{' '}
       <b style={{ textDecoration: 'underline' }}>
         {' '}
         <a
