@@ -28,19 +28,10 @@ const Share = ({ pageCanonicalUrl, title, description, tags, coverUrl }) => (
   <div>
     <IconContext.Provider value={{ className: style.icon }}>
       <div className={style.container}>
-        <FacebookShareButton url={pageCanonicalUrl}>
-          <FaFacebookSquare color="#133783" />
-        </FacebookShareButton>
         <TwitterShareButton url={pageCanonicalUrl} title={title}>
           <FaTwitterSquare color="#1da1f2" />
         </TwitterShareButton>
-        <LinkedinShareButton
-          url={pageCanonicalUrl}
-          title={title}
-          description={description}
-        >
-          <FaLinkedin color="#283e4a" />
-        </LinkedinShareButton>
+
         <PinterestShareButton
           url={pageCanonicalUrl}
           media={coverUrl}
