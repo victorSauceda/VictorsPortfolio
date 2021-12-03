@@ -20,11 +20,7 @@ const Post = ({ data, pageContext }) => {
   const translations =
     pageContext.translations.length > 1 ? pageContext.translations : null
   const img = cover.childImageSharp.fluid
-  const canonicalUrl = Utils.resolvePageUrl(
-    Config.siteUrl,
-    Config.pathPrefix,
-    path
-  )
+  const canonicalUrl = Utils.resolvePageUrl(Config.siteUrl, path)
   const coverUrl = Utils.resolveUrl(Config.siteUrl, img.src)
   const suggestedPosts = Utils.getSuggestedPosts(
     data.markdownRemark,
