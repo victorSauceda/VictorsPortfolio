@@ -76,7 +76,7 @@ class About extends React.Component {
               <b style={{ textDecoration: 'underline' }}>
                 {' '}
                 <a
-                  href="https://calendly.com/victorasauceda/"
+                  href="http://www.f3pugetsound.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ fontWeight: '1rem' }}
@@ -94,7 +94,7 @@ class About extends React.Component {
               <b style={{ textDecoration: 'underline' }}>
                 {' '}
                 <a
-                  href="https://calendly.com/victorasauceda/"
+                  href="mailto:victorasauceda@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ fontWeight: '1rem' }}
