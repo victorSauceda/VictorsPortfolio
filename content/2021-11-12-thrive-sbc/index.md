@@ -37,7 +37,7 @@ Responsible for creating filters to offer a better experience for the user when 
 </br>
 
 <li>
-Implemented User Authentication via SendGrid and API requests to our Postgres database
+Implemented User Authentication via JWT's, SendGrid, and APIrequests to our Postgres database
 </li>
 </br>
 <li>
