@@ -17,21 +17,21 @@ Technologies: Gatsby, Netlify, Stripe, NodeJS, React
 </br>
 </br>
 <h3>New Freedom Washington<h3>
-Developed for a non-profit called New Freedom Washington. Their mission is to provide people affected by gangs and crime with the skills, strategies, support, and resources to continue on the path of redemption, healing, and positive change. I was tasked with the designed the website from scratch and implement features based on organizational needs
+Developed a webstie for a non-profit called New Freedom Washington. Their mission is to provide people affected by gangs and crime with the skills, strategies, support, and resources to continue on the path of redemption, healing, and positive change. I was tasked with the designing of the website from scratch and I implement features based on organizational needs
 </br>
 
 <ul>
 
 <li>
-Stripe Checkout integration to accept debit/credit card payments to accept donations from donors with one time and recurring payments
+Stripe Checkout integration to accept debit/credit card payments to accept donations from donors with one time and recurring payment options
 </li>
 </br>
 <li>
-Implementation of a personal blog section to share stories of individuals who participate
+Implementation of a personal blog section to share stories of individuals who participate in the New Freedom program
 </li>
 </br>
 <li>
-Developed the website using Gatsby, NodeJS, Netlify, and React
+Developed the website using Gatsby, NodeJS, Netlify, React and more
 </li>
 </br>
 <li>
