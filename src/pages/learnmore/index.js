@@ -212,7 +212,11 @@ class Learnmore extends React.Component {
                           alt={`Image of ${name}`}
                         />
                       </a>
-                      <CardContent style={{ textAlign: 'center' }}>
+                      <CardContent
+                        style={{
+                          textAlign: 'center',
+                        }}
+                      >
                         <Typography
                           variant="body2"
                           color="text.secondary"
