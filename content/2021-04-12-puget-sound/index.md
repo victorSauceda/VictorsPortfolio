@@ -12,7 +12,8 @@ Started F3 Puget Sound: January 2020
 End Date: Current
 </br>
 Website: [f3pugetsound.com](https://www.f3pugetsound.com/) </br>
-Technologies: Wordpress, PHP, Python, Slack, Azure, Google Forms, SQL, DBeaver
+
+<!-- Technologies: Wordpress, PHP, Python, Slack, Azure, Google Forms, SQL, DBeaver -->
 
 </br>
 </br>

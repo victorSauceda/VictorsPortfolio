@@ -11,7 +11,8 @@ Started Kopolo: April 2020
 </br>
 End Date: April 2021
 </br>
-Technologies: React, Express, Stripe, NodeJS, MaterialUI
+
+<!-- Technologies: React, Express, Stripe, NodeJS, MaterialUI -->
 
 </br>
 </br>
