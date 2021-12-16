@@ -178,9 +178,11 @@ class Learnmore extends React.Component {
                 return (
                   <Grid
                     item
-                    sm={3}
+                    sm={12}
+                    md={4}
+                    lg={3}
                     style={{
-                      margin: '1rem .5rem',
+                      margin: '1rem 1rem',
                     }}
                   >
                     <Card
@@ -202,7 +204,7 @@ class Learnmore extends React.Component {
                         title={name}
                         subheader={date}
                       />
-                      <a href={link}>
+                      <a href={link} target="_blank" rel="noopener noreferrer">
                         <CardMedia
                           component="img"
                           height="270"
