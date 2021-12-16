@@ -12,7 +12,8 @@ Started New Freedom: September 2020
 End Date: Current
 </br>
 Website: [newfreedomwa.org](https://www.newfreedomwa.org/) </br>
-Technologies: Gatsby, Netlify, Stripe, NodeJS, React
+
+<!-- Technologies: Gatsby, Netlify, Stripe, NodeJS, React -->
 
 </br>
 </br>
