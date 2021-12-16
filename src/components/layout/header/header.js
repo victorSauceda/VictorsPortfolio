@@ -109,6 +109,7 @@ class Header extends Component {
           <li>
             <a
               target="_blank"
+              rel="noopener noreferrer"
               rel="nofollow noopener noreferrer"
               href={Config.social.linkedin}
             >
@@ -118,7 +119,7 @@ class Header extends Component {
           <li>
             <a
               target="_blank"
-              rel="nofollow noopener noreferrer"
+              rel="noopener noreferrer"
               href={Config.social.calendly}
             >
               <FaCalendar size="30" />
@@ -127,7 +128,7 @@ class Header extends Component {
           <li>
             <a
               target="_blank"
-              rel="nofollow noopener noreferrer"
+              rel="noopener noreferrer"
               href={Config.social.github}
             >
               <FaGithub size="30" />
