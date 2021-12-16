@@ -11,6 +11,8 @@ const Footer = () => (
       <b style={{ textDecoration: 'underline' }}>
         {' '}
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="mailto:victorasauceda@gmail.com?subject= Hi Victor, just seen your profile and wanted to connect"
           style={{ fontWeight: '1rem' }}
         >
