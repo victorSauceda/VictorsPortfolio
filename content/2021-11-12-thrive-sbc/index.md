@@ -21,7 +21,8 @@ Started Thrive SBC: October 2020
 End Date: Current
 </br>
 Website: [thrivesbc.com](https://www.thrivesbc.com/) </br>
-Technologies: Typescript, React, Postgres, NodeJS, Aptible, SendGrid, Airtable, Smartsheet
+
+<!-- Technologies: Typescript, React, Postgres, NodeJS, Aptible, SendGrid, Airtable, Smartsheet -->
 
 </br>
 </br>
@@ -37,7 +38,7 @@ Responsible for creating filters to offer a better experience for the user when 
 </br>
 
 <li>
-Implemented User Authentication via JWT's, SendGrid, and APIrequests to our Postgres database
+Implemented User Authentication via JWT's, SendGrid, and API requests to our Postgres database
 </li>
 </br>
 <li>
