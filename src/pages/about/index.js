@@ -88,7 +88,7 @@ class About extends React.Component {
               technology, justice reform advocacy, fitness, education, and much
               more. I volunteer as a facilitator every Saturday for Defy
               Ventures a program that assists individuals in their
-              entrepreneurial journey. I am sure that I can leverage my skillet
+              entrepreneurial journey. I am sure that I can leverage my skills
               to benefit the advancement of your company. Feel free to reach out
               to me at
               <b style={{ textDecoration: 'underline' }}>
