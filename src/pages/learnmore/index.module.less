@@ -22,12 +22,17 @@
     }
 }
 .cards {
-    // width: 25rem;
+
     justify-content: 'center';
 
     margin: auto;
-    height: 35rem;
+   height: 100%;
     text-align: center;
+    @media (max-width: 1275px) {
+     
+          height: 45rem !important;
+
+      }
     @media @mobile {
         width: 20rem;
         height: 40rem;
