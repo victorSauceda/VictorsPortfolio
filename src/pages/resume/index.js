@@ -15,11 +15,15 @@ import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown'
 const Resume = () => {
   const [numPages, setNumPages] = useState(2)
   const [pageNumber, setPageNumber] = useState(1)
-  const [resume, setResume] = useState(pageone)
+  const [resume, setResume] = useState(
+    'https://docs.google.com/document/d/e/2PACX-1vRPmmTL0L4jogLUTJKh9yR_qXtq3ObmVNj1d-g_shZHxW4PBHTWuFiln-lXCG5-5e2WaD7Aa9lPeVFs/pub?embedded=true'
+  )
   const matchesMin = useMediaQuery('(min-width:1275px)')
   useEffect(() => {
     if (matchesMin) {
-      setResume(pageone)
+      setResume(
+        'https://docs.google.com/document/d/e/2PACX-1vRPmmTL0L4jogLUTJKh9yR_qXtq3ObmVNj1d-g_shZHxW4PBHTWuFiln-lXCG5-5e2WaD7Aa9lPeVFs/pub?embedded=true'
+      )
     } else {
       setResume(pageonemobile)
     }
@@ -59,8 +63,19 @@ const Resume = () => {
           marginTop: '2rem',
         }}
       >
-        {resume === '../../../src/images/page1.png' ? (
-          <img style={{ width: '45rem' }} src={resume} alt="resume" />
+        {resume ===
+        'https://docs.google.com/document/d/e/2PACX-1vRPmmTL0L4jogLUTJKh9yR_qXtq3ObmVNj1d-g_shZHxW4PBHTWuFiln-lXCG5-5e2WaD7Aa9lPeVFs/pub?embedded=true' ? (
+          <iframe
+            scrolling="no"
+            frameBorder="none"
+            style={{
+              width: '50%',
+              height: '120rem',
+              margin: 'auto',
+              overflow: 'hidden',
+            }}
+            src="https://docs.google.com/document/d/e/2PACX-1vRPmmTL0L4jogLUTJKh9yR_qXtq3ObmVNj1d-g_shZHxW4PBHTWuFiln-lXCG5-5e2WaD7Aa9lPeVFs/pub?embedded=true"
+          ></iframe>
         ) : (
           <img
             style={{ width: `${matchesMin} ? '45rem' : '25rem'` }}
