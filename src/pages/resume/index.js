@@ -112,34 +112,38 @@ const Resume = () => {
           />
         </p>
       </a>
-      <nav
-        style={{
-          display: 'flex',
-          textAlign: 'center',
-          margin: 'auto',
-          justifyContent: 'center',
-          marginLeft: ` ${matchesMin} ? '0rem' : '8rem'`,
-          marginTop: '1rem',
-          zIndex: 20,
-        }}
-      >
-        <Button style={{ color: '#75B0BE' }} onClick={goToPrevPage}>
-          Prev
-        </Button>
-        <Button style={{ color: '#75B0BE' }} onClick={goToNextPage}>
-          Next
-        </Button>
-      </nav>
-      <p
-        style={{
-          display: 'flex',
-          // flexDirection: 'column',
-          justifyContent: 'center',
-          marginLeft: '0rem',
-        }}
-      >
-        Page {pageNumber} of {numPages}
-      </p>
+      {!matchesMin && (
+        <>
+          <nav
+            style={{
+              display: 'flex',
+              textAlign: 'center',
+              margin: 'auto',
+              justifyContent: 'center',
+              marginLeft: ` ${matchesMin} ? '0rem' : '8rem'`,
+              marginTop: '1rem',
+              zIndex: 20,
+            }}
+          >
+            <Button style={{ color: '#75B0BE' }} onClick={goToPrevPage}>
+              Prev
+            </Button>
+            <Button style={{ color: '#75B0BE' }} onClick={goToNextPage}>
+              Next
+            </Button>
+          </nav>
+          <p
+            style={{
+              display: 'flex',
+              // flexDirection: 'column',
+              justifyContent: 'center',
+              marginLeft: '0rem',
+            }}
+          >
+            Page {pageNumber} of {numPages}
+          </p>
+        </>
+      )}
     </Layout>
   )
 }
