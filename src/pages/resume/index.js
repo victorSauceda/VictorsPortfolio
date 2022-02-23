@@ -108,8 +108,6 @@ const Resume = () => {
             style={{
               display: 'flex',
               marginLeft: '.6rem',
-              // flexDirection: 'column',
-              // justifyContent: 'center',
             }}
           />
         </p>
