@@ -8,7 +8,7 @@ import Layout from '../../components/layout'
 import pageone from '../../../src/images/page1.png'
 import pageonemobile from '../../../src/images/page1mobile.jpg'
 import pagetwo from '../../../src/images/Page2.png'
-import pagetwomobile from '../../../src/images/Page2mobile.jpg'
+import pagetwomobile from '../../../src/images/page2mobile.jpg'
 
 import useMediaQuery from '@mui/material/useMediaQuery'
 import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown'
