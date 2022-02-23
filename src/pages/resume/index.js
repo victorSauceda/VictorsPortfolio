@@ -6,9 +6,9 @@ import SEO from '../../components/seo'
 import Button from '@mui/material/Button'
 import Layout from '../../components/layout'
 import pageone from '../../../src/images/page1.png'
-import pageonemobile from '../../../src/images/page1mobile.png'
+import pageonemobile from '../../../src/images/page1mobile.jpg'
 import pagetwo from '../../../src/images/Page2.png'
-import pagetwomobile from '../../../src/images/Page2mobile.png'
+import pagetwomobile from '../../../src/images/Page2mobile.jpg'
 
 import useMediaQuery from '@mui/material/useMediaQuery'
 import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown'
@@ -16,13 +16,13 @@ const Resume = () => {
   const [numPages, setNumPages] = useState(2)
   const [pageNumber, setPageNumber] = useState(1)
   const [resume, setResume] = useState(
-    'https://docs.google.com/document/d/e/2PACX-1vRPmmTL0L4jogLUTJKh9yR_qXtq3ObmVNj1d-g_shZHxW4PBHTWuFiln-lXCG5-5e2WaD7Aa9lPeVFs/pub?embedded=true'
+    'https://docs.google.com/document/d/e/2PACX-1vQRQd7xAy5G5rNN5bLdTUAxNEk3NmCpa3OPQqyXfOhHnhmHUh8VJSAktmajyoapxoAF6VsCl3B_BuWL/pub?embedded=true'
   )
   const matchesMin = useMediaQuery('(min-width:1275px)')
   useEffect(() => {
     if (matchesMin) {
       setResume(
-        'https://docs.google.com/document/d/e/2PACX-1vRPmmTL0L4jogLUTJKh9yR_qXtq3ObmVNj1d-g_shZHxW4PBHTWuFiln-lXCG5-5e2WaD7Aa9lPeVFs/pub?embedded=true'
+        'https://docs.google.com/document/d/e/2PACX-1vQRQd7xAy5G5rNN5bLdTUAxNEk3NmCpa3OPQqyXfOhHnhmHUh8VJSAktmajyoapxoAF6VsCl3B_BuWL/pub?embedded=true'
       )
     } else {
       setResume(pageonemobile)
@@ -64,7 +64,7 @@ const Resume = () => {
         }}
       >
         {resume ===
-        'https://docs.google.com/document/d/e/2PACX-1vRPmmTL0L4jogLUTJKh9yR_qXtq3ObmVNj1d-g_shZHxW4PBHTWuFiln-lXCG5-5e2WaD7Aa9lPeVFs/pub?embedded=true' ? (
+        'https://docs.google.com/document/d/e/2PACX-1vQRQd7xAy5G5rNN5bLdTUAxNEk3NmCpa3OPQqyXfOhHnhmHUh8VJSAktmajyoapxoAF6VsCl3B_BuWL/pub?embedded=true' ? (
           <iframe
             scrolling="no"
             frameBorder="none"
@@ -74,18 +74,18 @@ const Resume = () => {
               margin: 'auto',
               overflow: 'hidden',
             }}
-            src="https://docs.google.com/document/d/e/2PACX-1vRPmmTL0L4jogLUTJKh9yR_qXtq3ObmVNj1d-g_shZHxW4PBHTWuFiln-lXCG5-5e2WaD7Aa9lPeVFs/pub?embedded=true"
+            src="https://docs.google.com/document/d/e/2PACX-1vQRQd7xAy5G5rNN5bLdTUAxNEk3NmCpa3OPQqyXfOhHnhmHUh8VJSAktmajyoapxoAF6VsCl3B_BuWL/pub?embedded=true"
           ></iframe>
         ) : (
           <img
-            style={{ width: `${matchesMin} ? '45rem' : '25rem'` }}
+            style={{ width: `${matchesMin} ? '45rem' : '15rem'` }}
             src={resume}
             alt="resume"
           />
         )}
       </div>
       <a
-        href={`https://docs.google.com/document/d/1-BKOQkCpyRVgMvXhmxBA49Bch_c-ts4P59PZ-m_0hsE/export?format=pdf`}
+        href={`https://docs.google.com/document/d/1IhfCMydMuDxSnAXB4oVpfMR2t2T4JTaLQ-BRhG5kqY4/export?format=pdf`}
         download="VictorSaucedaResume"
         style={{
           display: 'flex',
