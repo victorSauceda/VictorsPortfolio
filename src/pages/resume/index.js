@@ -5,46 +5,43 @@ import React, { useEffect, useState } from 'react'
 import SEO from '../../components/seo'
 import Button from '@mui/material/Button'
 import Layout from '../../components/layout'
-import pageone from '../../../src/images/page1.png'
-import pageonemobile from '../../../src/images/page1mobile.jpg'
-import pagetwo from '../../../src/images/Page2.png'
-import pagetwomobile from '../../../src/images/page2mobile.jpg'
-
+import pageonemobile from '../../../src/images/page1mobile.png'
+import pagetwomobile from '../../../src/images/page2mobile.png'
+import pagethreemobile from '../../../src/images/page3mobile.png'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown'
 const Resume = () => {
-  const [numPages, setNumPages] = useState(2)
+  const numPages = 3
   const [pageNumber, setPageNumber] = useState(1)
-  const [resume, setResume] = useState(
-    'https://docs.google.com/document/d/e/2PACX-1vQRQd7xAy5G5rNN5bLdTUAxNEk3NmCpa3OPQqyXfOhHnhmHUh8VJSAktmajyoapxoAF6VsCl3B_BuWL/pub?embedded=true'
-  )
+  const googleResumeLink =
+    'https://docs.google.com/document/d/1IhfCMydMuDxSnAXB4oVpfMR2t2T4JTaLQ-BRhG5kqY4/pub?embedded=true'
+  const [resume, setResume] = useState(googleResumeLink)
   const matchesMin = useMediaQuery('(min-width:1275px)')
+
   useEffect(() => {
     if (matchesMin) {
-      setResume(
-        'https://docs.google.com/document/d/e/2PACX-1vQRQd7xAy5G5rNN5bLdTUAxNEk3NmCpa3OPQqyXfOhHnhmHUh8VJSAktmajyoapxoAF6VsCl3B_BuWL/pub?embedded=true'
-      )
+      setResume(googleResumeLink)
     } else {
       setResume(pageonemobile)
     }
   }, [matchesMin])
 
   const goToPrevPage = () => {
-    if (matchesMin) {
-      setResume(pageone)
-      setPageNumber(1)
+    if (pageNumber === 3) {
+      setPageNumber(2)
+      setResume(pagetwomobile)
     } else {
-      setResume(pageonemobile)
       setPageNumber(1)
+      setResume(pageonemobile)
     }
   }
-  const goToNextPage = () => {
-    if (matchesMin) {
-      setResume(pagetwo)
+  const goToNextPage = async () => {
+    if (pageNumber === 1) {
       setPageNumber(2)
-    } else {
       setResume(pagetwomobile)
-      setPageNumber(2)
+    } else {
+      setPageNumber(3)
+      setResume(pagethreemobile)
     }
   }
   return (
@@ -58,30 +55,24 @@ const Resume = () => {
       <div
         style={{
           display: 'flex',
-          // flexDirection: 'column',
           justifyContent: 'center',
           marginTop: '2rem',
         }}
       >
-        {resume ===
-        'https://docs.google.com/document/d/e/2PACX-1vQRQd7xAy5G5rNN5bLdTUAxNEk3NmCpa3OPQqyXfOhHnhmHUh8VJSAktmajyoapxoAF6VsCl3B_BuWL/pub?embedded=true' ? (
+        {resume === googleResumeLink ? (
           <iframe
             scrolling="no"
             frameBorder="none"
             style={{
-              width: '50%',
-              height: '120rem',
+              width: matchesMin ? '50%' : '95%',
+              height: matchesMin ? '120rem' : '260rem',
               margin: 'auto',
               overflow: 'hidden',
             }}
-            src="https://docs.google.com/document/d/e/2PACX-1vQRQd7xAy5G5rNN5bLdTUAxNEk3NmCpa3OPQqyXfOhHnhmHUh8VJSAktmajyoapxoAF6VsCl3B_BuWL/pub?embedded=true"
+            src={googleResumeLink}
           ></iframe>
         ) : (
-          <img
-            style={{ width: `${matchesMin} ? '45rem' : '15rem'` }}
-            src={resume}
-            alt="resume"
-          />
+          <img style={{ width: '20rem' }} src={resume} alt="resume" />
         )}
       </div>
       <a
@@ -89,7 +80,6 @@ const Resume = () => {
         download="VictorSaucedaResume"
         style={{
           display: 'flex',
-          // flexDirection: 'column',
           justifyContent: 'center',
           marginTop: '2rem',
         }}
@@ -98,7 +88,6 @@ const Resume = () => {
           style={{
             display: 'flex',
             margin: 'auto',
-            // flexDirection: 'column',
             justifyContent: 'center',
           }}
         >
@@ -125,10 +114,18 @@ const Resume = () => {
               zIndex: 20,
             }}
           >
-            <Button style={{ color: '#75B0BE' }} onClick={goToPrevPage}>
+            <Button
+              disabled={pageNumber === 1}
+              style={{ color: pageNumber === 1 ? 'gray' : '#75B0BE' }}
+              onClick={goToPrevPage}
+            >
               Prev
             </Button>
-            <Button style={{ color: '#75B0BE' }} onClick={goToNextPage}>
+            <Button
+              disabled={pageNumber === 3}
+              style={{ color: pageNumber === 3 ? 'gray' : '#75B0BE' }}
+              onClick={goToNextPage}
+            >
               Next
             </Button>
           </nav>
